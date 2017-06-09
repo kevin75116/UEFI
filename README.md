@@ -1,7 +1,7 @@
 # UEFI
 UEFI-related Programming
 
-REQ0208 is exactly the same programm as GptExample_Support. The difference between them is Standard C Library. The REQ0208 is using the Standard C Library to provide a main() entry point and it allows user-input arguments; GptExample_Support is a very simple EDK II native application that doesn't use any features of the Standard C Library.
+REQ0208 is exactly the same programm as GptExample_Support. The difference between them is Standard C Library. The REQ0208 is using the Standard C Library to provide a main() entry point and it allows user-input arguments; GptExample_Support is a EDK II native application that doesn't use any features of the Standard C Library.
 
 [Prerequest]
 1. Follow the guidelines in the following link to setup your EDK II environment.
