@@ -1,0 +1,39 @@
+[Defines]
+  INF_VERSION                    = 0x00010006
+  BASE_NAME                      = SignatureDatabase
+  FILE_GUID                      = 2aaed581-cb1c-4020-bfc8-c230cbf8c453
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = ShellCEntryLib
+
+[Sources]
+  SignatureDatabase.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[LibraryClasses]
+  UefiLib
+  ShellCEntryLib
+  UefiBootServicesTableLib
+  MemoryAllocationLib
+
+[Protocols]
+  
+[Guids]
+  gEfiImageSecurityDatabaseGuid
+  gEfiCertSha256Guid
+  gEfiCertRsa2048Guid
+  gEfiCertRsa2048Sha256Guid
+  gEfiCertSha1Guid
+  gEfiCertRsa2048Sha1Guid
+  gEfiCertX509Guid
+  gEfiCertSha224Guid
+  gEfiCertSha384Guid
+  gEfiCertSha512Guid
+  gEfiCertX509Sha256Guid
+  gEfiCertX509Sha384Guid
+  gEfiCertX509Sha512Guid
+  gEfiCertPkcs7Guid
