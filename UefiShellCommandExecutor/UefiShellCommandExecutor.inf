@@ -1,0 +1,32 @@
+## @file
+#  To execute a command on UEFI Shell#  
+##
+
+[Defines]
+  INF_VERSION                    = 1.25
+  BASE_NAME                      = UefiShellCommandExecutor
+  FILE_GUID                      = 9642dec9-88cb-4342-b19c-b9846883f4a5 #Copy and paste the GUID from http://www.guidgen.com/ here
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  UefiShellCommandExecutor.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[LibraryClasses]
+  ShellLib
+  UefiApplicationEntryPoint
+  UefiLib
+[Guids]
+
+[Ppis]
+
+[Protocols]
+
+[FeaturePcd]
+
+[Pcd]
